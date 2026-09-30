@@ -22,25 +22,27 @@ import {
   Menu,
   Phone,
   Scale,
+  ShieldCheck,
   Star,
   X,
 } from "lucide-react";
 import GlowingButton from "./components/GlowingButton";
 
-const WHATSAPP_NUMBER = "5535997405607";
-const PHONE_DISPLAY = "(35) 99740-5607";
-const EMAIL_CONTACT = "contato@draizabellarenno.com";
+const WHATSAPP_NUMBER = "5535999999999";
+const PHONE_DISPLAY = "(35) 99999-9999";
+const EMAIL_CONTACT = "contato@dralucimarafernandes.adv.br";
+const OAB_NUMBER = "OAB/MG 231.216";
 
 function getWhatsAppUrl(message?: string) {
   const defaultText =
-    "Olá, Dra. Izabella Rennó. Gostaria de solicitar uma consulta jurídica especializada.";
+    "Olá, Dra. Lucimara Fernandes. Gostaria de solicitar uma consulta jurídica especializada.";
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
     message || defaultText
   )}`;
 }
 
 const GOOGLE_MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=Dra.+Izabella+Renn%C3%B3+Del-Ducca+de+Souza%2C+Edif%C3%ADcio+Santa+Clara%2C+R.+Cel.+Francisco+Braz%2C+185+-+Sl+205+-+Centro%2C+Itajub%C3%A1+-+MG%2C+37500-005";
+  "https://www.google.com/maps/search/?api=1&query=Dra.+Lucimara+Fernandes+Advogada+Av.+Santo+Ant%C3%B4nio+200+Sala+908+Jardim+Cascatinha+Po%C3%A7os+de+Caldas+MG";
 
 function WhatsAppIcon({
   size = 17,
@@ -90,143 +92,182 @@ interface PracticeArea {
 
 const practiceAreas: PracticeArea[] = [
   {
+    id: "trabalhista-emprego",
+    title: "Direito do Trabalho",
+    icon: Briefcase,
+    tag: "Alta Combatividade",
+    summary:
+      "Defesa rigorosa dos direitos do trabalhador e assessoria preventiva empresarial para mitigar passivos e pacificar relações de trabalho.",
+    details:
+      "Reconhecida por clientes pelo amplo conhecimento na área trabalhista, a atuação da Dra. Lucimara Fernandes combina firmeza combativa e análise detalhada de laudas contratuais. Protegemos trabalhadores em rescisões indiretas, reversão de justa causa, horas extras, insalubridade e assédio moral, além de assessorar empresas com auditoria jurídica preventiva de contratos e rotinas de trabalho.",
+    topics: [
+      "Rescisão indireta por falta grave do empregador (Art. 483 CLT)",
+      "Reversão de demissão por justa causa indevida",
+      "Horas extras, intervalos suprimidos e adicionais legais",
+      "Indenizações por assédio moral e doenças ocupacionais",
+      "Auditoria preventiva de rotinas e contratos de trabalho",
+    ],
+    whatsAppText:
+      "Olá, Dra. Lucimara Fernandes. Gostaria de uma consulta especializada em Direito do Trabalho.",
+  },
+  {
     id: "civel-contratos",
     title: "Direito Cível & Contratos",
     icon: Scale,
-    tag: "Padrão HarvardX",
+    tag: "Rigor Analítico",
     summary:
-      "Assessoria estratégica em contratos com padrão internacional, auditoria de riscos, responsabilidade civil e litígios patrimoniais.",
+      "Assessoria estratégica na elaboração e revisão minuciosa de contratos civis, responsabilidade civil e recuperação de créditos patrimoniais.",
     details:
-      "Com formação especializada e certificada pela Harvard Law School (HarvardX em Contract Law), a Dra. Izabella Rennó atua na elaboração e revisão minuciosa de contratos civis e comerciais de alta relevância. A atuação abrange também o cancelamento e anulação de doações por ingratidão (Artigo 555 do Código Civil), rescisões contratuais, reparações por danos morais e materiais e disputas patrimoniais complexas.",
+      "Atuação profunda na prevenção e solução de controvérsias civis e contratuais. Da estruturação e auditoria de contratos civis e comerciais à cobrança de títulos executivos, reparações por perdas e danos materiais e morais, rescisões e disputas imobiliárias, garantindo estabilidade e proteção ao seu patrimônio.",
     topics: [
-      "Auditoria preventiva & elaboração de contratos (HarvardX)",
-      "Anulação e revogação de doações por ingratidão",
-      "Responsabilidade civil e reparação por danos",
-      "Execução de títulos e disputas patrimoniais",
+      "Elaboração, auditoria de riscos e revisão técnica de contratos",
+      "Ações de cobrança, execução de títulos e recuperação de crédito",
+      "Responsabilidade civil e indenização por danos materiais e morais",
+      "Resolução e rescisão contratual com apuração de perdas e danos",
+      "Disputas patrimoniais, posse e propriedade imobiliária",
     ],
     whatsAppText:
-      "Olá, Dra. Izabella Rennó. Gostaria de uma consulta especializada em Direito Cível e Contratos.",
-  },
-  {
-    id: "consumidor-bancario",
-    title: "Direito do Consumidor & Bancário",
-    icon: Landmark,
-    tag: "Defesa Intransigente",
-    summary:
-      "Combate incisivo a abusos de instituições financeiras, juros abusivos, fraudes, negativações indevidas e violações de tempo.",
-    details:
-      "Proteção rigorosa contra práticas abusivas de bancos e fornecedores. Atuação especializada em fraudes bancárias, empréstimos consignados não solicitados, cobrança de juros extorsivos, negativações indevidas no SPC/Serasa e ressarcimento pelo desvio produtivo do consumidor — incluindo indenizações por tempo excessivo e prejudicial em filas de agências bancárias.",
-    topics: [
-      "Fraudes financeiras e empréstimos fraudulentos",
-      "Revisão de juros e cláusulas bancárias abusivas",
-      "Tempo excessivo em fila de banco (desvio produtivo)",
-      "Indenizações por negativação indevida e cobrança vexatória",
-    ],
-    whatsAppText:
-      "Olá, Dra. Izabella Rennó. Gostaria de uma consulta especializada em Direito do Consumidor e Bancário.",
+      "Olá, Dra. Lucimara Fernandes. Gostaria de uma consulta especializada em Direito Cível e Contratos.",
   },
   {
     id: "familia-sucessoes",
     title: "Família & Sucessões",
     icon: HeartHandshake,
-    tag: "Atendimento Humanizado",
+    tag: "Acolhimento & Firmeza",
     summary:
-      "Condução sensível, técnica e discreta em inventários, partilhas judiciais e extrajudiciais, divórcios e planejamento sucessório.",
+      "Condução sensível, rápida e resolutiva em inventários extrajudiciais em cartório, divórcios, partilhas e planejamento sucessório patrimonial.",
     details:
-      "As questões de família e sucessões exigem equilíbrio entre firmeza jurídica e sensibilidade humana. Atuação estruturada em inventários judiciais e extrajudiciais rápidos em cartório, planejamento sucessório para resguardo do patrimônio familiar, divórcios consensuais e litigiosos, partilha de bens, fixação e revisão de pensão alimentícia e guarda de menores.",
+      "Demandas familiares e sucessórias exigem sensibilidade humana ímpar somada a rigor técnico impecável. Atuamos com extrema celeridade na realização de inventários em cartório ou judiciais, divórcios consensuais e litigiosos, partilha de patrimônio, guarda de menores, fixação e revisão de pensão alimentícia e planejamento sucessório para preservação de bens.",
     topics: [
-      "Inventários judiciais e extrajudiciais ágeis",
-      "Planejamento sucessório e proteção patrimonial",
-      "Divórcio consensual e litigioso com partilha",
-      "Pensão alimentícia, guarda e convivência",
+      "Inventários extrajudiciais rápidos em cartório e inventários judiciais",
+      "Divórcio consensual e litigioso com partilha estratégica de bens",
+      "Pensão alimentícia, regulamentação de guarda e convivência",
+      "Planejamento sucessório e doações com cláusulas protetivas",
+      "União estável, reconhecimento e dissolução com partilha",
     ],
     whatsAppText:
-      "Olá, Dra. Izabella Rennó. Gostaria de uma consulta especializada em Direito de Família e Sucessões.",
+      "Olá, Dra. Lucimara Fernandes. Gostaria de uma consulta especializada em Direito de Família e Sucessões.",
   },
   {
-    id: "trabalhista-previdenciario",
-    title: "Trabalhista & Previdenciário",
-    icon: Briefcase,
-    tag: "Rigor & Direitos",
+    id: "previdenciario-inss",
+    title: "Direito Previdenciário",
+    icon: Award,
+    tag: "Proteção de Direitos",
     summary:
-      "Resguardo enfático de direitos trabalhistas, consultoria preventiva empresarial e concessão de benefícios e pensões do INSS.",
+      "Planejamento previdenciário minucioso, concessão e revisão de aposentadorias, pensão por morte e reversão de indeferimentos do INSS.",
     details:
-      "Defesa dos direitos de profissionais e empresas nas relações de trabalho: rescisão indireta, verbas rescisórias inadimplidas, horas extraordinárias, equiparação salarial e compliance preventivo. No âmbito previdenciário, atuação detalhada para concessão de pensão por morte, aposentadorias especiais, auxílios e planejamento previdenciário minucioso.",
+      "A conquista do benefício previdenciário justo exige análise detalhada de todo o histórico contributivo e enquadramento nas regras mais vantajosas. Atuamos administrativamente perante o INSS e judicialmente em aposentadorias (tempo, idade, especial), concessão de pensão por morte, auxílios por incapacidade e planejamento previdenciário preventivo.",
     topics: [
-      "Reclamatórias trabalhistas e rescisões contratuais",
-      "Concessão de pensão por morte e auxílios do INSS",
-      "Planejamento e revisão de aposentadorias",
-      "Consultoria jurídica preventiva e contratos de trabalho",
+      "Planejamento previdenciário para obtenção do benefício de maior valor",
+      "Aposentadoria por idade, tempo de contribuição e especial",
+      "Concessão célere de pensão por morte e auxílio por incapacidade",
+      "Revisão de benefícios concedidos e cobrança de valores atrasados",
+      "Reversão de benefícios indeferidos ou cessados indevidamente",
     ],
     whatsAppText:
-      "Olá, Dra. Izabella Rennó. Gostaria de uma consulta especializada em Direito Trabalhista e Previdenciário.",
+      "Olá, Dra. Lucimara Fernandes. Gostaria de uma consulta especializada em Direito Previdenciário.",
+  },
+  {
+    id: "consumidor-bancario",
+    title: "Consumidor & Bancário",
+    icon: Landmark,
+    tag: "Defesa Intransigente",
+    summary:
+      "Combate enérgico a abusos de instituições financeiras, juros extorsivos, fraudes, empréstimos indevidos e negativações no SPC/Serasa.",
+    details:
+      "Defesa vigorosa contra arbitrariedades bancárias e violações às relações de consumo. Atuação especializada em fraudes digitais, empréstimos consignados não solicitados, cobrança de encargos abusivos, inclusão indevida nos cadastros de inadimplentes e ações indenizatórias por desvio produtivo do consumidor.",
+    topics: [
+      "Fraudes financeiras, golpes bancários e empréstimos fraudulentos",
+      "Ação revisional de juros abusivos e tarifas não contratadas",
+      "Indenizações por negativação indevida no SPC e Serasa",
+      "Descontos indevidos em aposentadoria e pensão do INSS",
+      "Reparação civil por danos morais e materiais contra fornecedores",
+    ],
+    whatsAppText:
+      "Olá, Dra. Lucimara Fernandes. Gostaria de uma consulta especializada em Direito do Consumidor e Bancário.",
   },
 ];
 
 const clientReviews = [
   {
-    name: "Louise Bianca",
-    reviewsCount: "5 avaliações",
-    date: "Há 1 ano",
-    highlight: "Lê todo o processo com cuidado absoluto",
-    content:
-      "Dra Izabella é extremamente dedicada ao que faz, uma das únicas - senão a única - que realmente lê todo o processo e escreve todas as suas manifestações com determinação, atenção e cuidado! Só tenho elogios ao escritório, ao atendimento e ao desempenho da Dra! Excepcional! 🙏🏻",
-  },
-  {
-    name: "Henrique Nunes",
+    name: "Gessamia Aguiar",
     reviewsCount: "1 avaliação",
-    date: "Há 3 anos",
-    highlight: "Atendimento diferenciado e segurança técnica",
+    date: "Há 6 meses",
+    highlight: "Dedicação e atenção aos detalhes que trouxeram segurança",
     content:
-      "Atendimento diferenciado! Uma grande profissional que transmite confiança para o cliente, pois fala com segurança mostrando que entende do que fala. O investimento vale a pena. Serviço de qualidade e com seriedade! Recomendo!",
+      "Dra., gostaria de expressar minha profunda gratidão e admiração pelo excelente trabalho que você realizou. Sua competência técnica é evidente, mas foi sua dedicação e atenção aos detalhes que me trouxeram a segurança necessária durante todo o processo. É inspirador ver uma profissional tão comprometida com o que faz. Muito obrigada!",
   },
   {
-    name: "Valter Luiz Arruda",
-    reviewsCount: "4 avaliações",
-    date: "Há 9 meses",
-    highlight: "Séria, dedicada e objetivos alcançados",
-    content:
-      "Excelente profissional. Séria e dedicada. Foi muito bom tê-la como advogada. Objetivos alcançados.",
-  },
-  {
-    name: "Caique Oliveira",
+    name: "Versaille Assessoria Tributária e Contábil",
     reviewsCount: "3 avaliações",
-    date: "Há 2 anos",
-    highlight: "Conhecimento incrível e muita cordialidade",
+    date: "Há 10 meses",
+    highlight: "Técnica e humana ao mesmo tempo. Recomendamos com total confiança",
     content:
-      "Dra Izabella é uma excelente advogada e de um conhecimento incrível. Muito responsável e profissional no que faz. Super dedicada com seus clientes, trata a todos de maneira cordial. Esclarece todas às dúvidas de maneira clara.",
+      "A Dra. Lucimara é uma profissional excepcional: atenciosa, clara nas orientações e extremamente responsável. Técnica e humana ao mesmo tempo. Recomendamos com total confiança.",
   },
   {
-    name: "Izabel Nogueira",
+    name: "Lucinei Cristina da silva",
     reviewsCount: "1 avaliação",
+    date: "Há 3 meses",
+    highlight: "Amplo conhecimento na área trabalhista e muita dedicação",
+    content:
+      "Minha experiência foi ótima, uma excelente profissional, atenciosa, dedicada e com amplo conhecimento na área trabalhista.",
+  },
+  {
+    name: "Alex De Oliveira",
+    reviewsCount: "2 avaliações",
+    date: "Há 3 meses",
+    highlight: "Altíssimo profissionalismo, atenciosa e responsável",
+    content:
+      "Uma excelente profissional muito atenciosa, responsável, profissional de altíssimo profissionalismo.",
+  },
+  {
+    name: "Pedro Tamassia",
+    reviewsCount: "8 avaliações",
     date: "Há 1 ano",
-    highlight: "Confiança e empenho ao máximo",
+    highlight: "Atendimento com humanidade e profissionalismo impecáveis",
     content:
-      "A Doutora Izabella é muito atenciosa e competente, sentimos muita confiança que ela vai se empenhar ao máximo para que consigamos atingir nossos objetivos.",
+      "Excelente profissional, atendimento com humanidade e profissionalismo. Recomendo!",
   },
   {
-    name: "Carlos Jader",
-    reviewsCount: "5 avaliações",
-    date: "Há 2 anos",
-    highlight: "Grande conhecimento e cuidado com o cliente",
+    name: "Ada Rodrigues",
+    reviewsCount: "3 avaliações",
+    date: "Há 3 meses",
+    highlight: "Super atenciosa e dedicada às suas causas",
     content:
-      "Excelente advogada! Se preocupa com os clientes, trata todos muito bem! Recomendo, pois além de uma ótima pessoa é uma profissional dedicada e com grande conhecimento!",
+      "Excelente profissional. Super atenciosa e dedicada às suas causas. Super indico.",
   },
   {
-    name: "Edson Lima",
-    reviewsCount: "9 avaliações",
-    date: "Há 3 anos",
-    highlight: "Serviço que superou expectativas",
+    name: "murilo damiao",
+    reviewsCount: "2 avaliações",
+    date: "Há 1 mês",
+    highlight: "Ótimo atendimento, muito boa na profissão que exerce",
     content:
-      "A Drª Izabella é uma excelente profissional. Foi indicada por um amigo meu e prestou um excepcional serviço superando minhas expectativas. Eu a recomendo.",
+      "Ótimo atendimento recomendo, muito boa na profissão que ela exerce me ajudou muito.",
   },
   {
-    name: "Isabela Santos",
+    name: "Osvaldo Prado",
     reviewsCount: "1 avaliação",
-    date: "Há 4 anos",
-    highlight: "Trabalho impecável e correto",
+    date: "Há 3 meses",
+    highlight: "Esclarece muito bem e faz tudo certo",
     content:
-      "A Dra. é uma excelente advogada, extremamente correta e competente, trabalha de forma impecável. Recomendo demais!",
+      "Ótima faz tudo certo esclarece muito bem Oq vc precisa é só da notícia boa.",
+  },
+  {
+    name: "Ilma Helena",
+    reviewsCount: "2 avaliações",
+    date: "Há 6 meses",
+    highlight: "Uma excelente profissional, super indico",
+    content:
+      "Uma excelente profissional, super indico❤️",
+  },
+  {
+    name: "Eduardo Bernardes",
+    reviewsCount: "3 avaliações",
+    date: "Há 3 meses",
+    highlight: "Excelente profissional, muito dedicada",
+    content:
+      "Excelente profissional, muito dedicada.",
   },
 ];
 
@@ -287,21 +328,21 @@ export default function Home() {
     <MotionConfig reducedMotion="user">
       <main className="overflow-hidden bg-ivory text-ink">
         {/* Navigation Bar */}
-        <header className="sticky top-0 z-40 border-b border-ink/10 bg-ivory/95 backdrop-blur-xl">
-          <div className="mx-auto flex h-[90px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[105px] sm:px-8 lg:px-12">
+        <header className="sticky top-0 z-40 border-b border-white/10 bg-black backdrop-blur-xl">
+          <div className="mx-auto flex h-[95px] max-w-7xl items-center justify-between gap-5 px-5 sm:h-[110px] sm:px-8 lg:px-12">
             <a
               href="#inicio"
-              aria-label="Izabella Rennó Advocacia — Início"
+              aria-label="Dra. Lucimara Fernandes Advocacia — Início"
               onClick={closeMenu}
               className="flex items-center gap-3 transition-opacity hover:opacity-90"
             >
               <Image
                 src="/logo.png"
-                width={500}
-                height={171}
-                alt="Izabella Rennó Advocacia — OAB/MG 201.285"
+                width={480}
+                height={197}
+                alt="Dra. Lucimara Fernandes Advocacia — OAB/MG 231.216"
                 priority
-                className="h-16 w-auto object-contain sm:h-[77px]"
+                className="h-16 w-auto object-contain sm:h-[80px]"
               />
             </a>
 
@@ -334,8 +375,8 @@ export default function Home() {
                 href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="WhatsApp da Dra. Izabella Rennó"
-                className="grid size-10 place-items-center rounded-full border border-ink/15 text-brand-700 transition-all hover:border-brand-700 hover:bg-brand-50 hover:text-brand-800"
+                aria-label="WhatsApp da Dra. Lucimara Fernandes"
+                className="grid size-10 place-items-center rounded-full border border-white/20 text-brand-300 transition-all hover:border-brand-400 hover:bg-white/10 hover:text-white"
               >
                 <WhatsAppIcon size={18} />
               </a>
@@ -354,7 +395,7 @@ export default function Home() {
               aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
               aria-expanded={menuOpen}
               aria-controls="mobile-navigation"
-              className="grid size-11 place-items-center rounded-full border border-ink/15 text-ink lg:hidden"
+              className="grid size-11 place-items-center rounded-full border border-white/20 text-white lg:hidden"
               onClick={() => setMenuOpen((open) => !open)}
             >
               {menuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -370,7 +411,7 @@ export default function Home() {
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.22 }}
-                className="overflow-hidden border-t border-ink/10 bg-ivory px-6 lg:hidden"
+                className="overflow-hidden border-t border-white/10 bg-black px-6 lg:hidden"
               >
                 <div className="mx-auto flex max-w-7xl flex-col gap-1 py-4">
                   {[
@@ -385,7 +426,7 @@ export default function Home() {
                       key={label}
                       href={href}
                       onClick={closeMenu}
-                      className="py-3 text-sm font-medium text-ink-soft hover:text-brand-700"
+                      className="py-3 text-sm font-medium text-white/80 hover:text-brand-300"
                     >
                       {label}
                     </a>
@@ -422,16 +463,16 @@ export default function Home() {
             >
               <motion.p variants={reveal} className="eyebrow mb-6">
                 <span className="size-2 rounded-full bg-brand-700" />
-                OAB/MG 201.285 · Edifício Santa Clara · Itajubá - MG
+                OAB/MG 231.216 · Edifício Enterprise · Poços de Caldas - MG
               </motion.p>
 
               <motion.h1
                 variants={reveal}
-                className="max-w-[760px] font-serif text-[3.2rem] leading-[0.98] tracking-[-0.045em] text-ink sm:text-6xl lg:text-[4.9rem]"
+                className="max-w-[760px] font-serif text-[3.2rem] leading-[0.98] tracking-[-0.045em] text-ink sm:text-6xl lg:text-[4.85rem]"
               >
                 Alta precisão jurídica com{" "}
                 <span className="italic text-brand-700 font-serif">
-                  dedicação exclusiva
+                  dedicação minuciosa
                 </span>{" "}
                 a cada causa.
               </motion.h1>
@@ -441,9 +482,10 @@ export default function Home() {
                 className="mt-7 max-w-xl text-[15px] leading-7 text-ink-soft sm:text-base sm:leading-8"
               >
                 Atendimento humanizado, ético e resolutivo conduzido pela Dra.
-                Izabella Rennó. Soluções jurídicas seguras nas áreas Cível,
-                Contratos, Consumidor & Bancário, Família e Trabalhista —
-                presencial em Itajubá e on-line em todo o Brasil.
+                Lucimara Fernandes. Soluções jurídicas estratégicas nas áreas de
+                Direito do Trabalho, Cível & Contratos, Família & Sucessões,
+                Previdenciário e Consumidor — atendimento presencial no Jardim
+                Cascatinha em Poços de Caldas e digital em todo o Brasil.
               </motion.p>
 
               <motion.div
@@ -456,7 +498,7 @@ export default function Home() {
                   size="lg"
                   className="rounded-full shadow-md"
                 >
-                  <WhatsAppIcon size={16} /> Falar com a Dra. Izabella
+                  <WhatsAppIcon size={16} /> Falar com a Dra. Lucimara
                 </GlowingButton>
                 <a
                   href="#atuacao"
@@ -475,16 +517,16 @@ export default function Home() {
                 className="mt-12 flex flex-wrap items-center gap-x-7 gap-y-4 border-t border-ink/10 pt-6 text-xs text-ink-soft"
               >
                 <span className="inline-flex items-center gap-2 font-medium">
-                  <Award size={16} className="text-brand-700" /> Formação
-                  HarvardX em Contratos
+                  <Star size={15} className="fill-brand-700 text-brand-700" />{" "}
+                  5,0 estrelas no Google (62 avaliações)
                 </span>
                 <span className="inline-flex items-center gap-2 font-medium">
-                  <Star size={15} className="fill-brand-700 text-brand-700" />{" "}
-                  4,9 estrelas no Google (50+ avaliações)
+                  <ShieldCheck size={16} className="text-brand-700" /> Inscrição
+                  OAB/MG 231.216
                 </span>
                 <span className="inline-flex items-center gap-2 font-medium">
                   <MapPin size={15} className="text-brand-700" /> Presencial em
-                  Itajubá e on-line
+                  Poços de Caldas e on-line
                 </span>
               </motion.div>
             </motion.div>
@@ -498,51 +540,58 @@ export default function Home() {
                 delay: 0.18,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="relative mx-auto w-full max-w-[470px] lg:ml-auto lg:mr-3"
+              className="relative mx-auto w-full max-w-[480px] lg:ml-auto lg:mr-3"
             >
-              {/* Outer decorative gold border */}
-              <div className="absolute -inset-3 -rotate-2 rounded-[46%_46%_5%_5%] border border-brand-700/25 sm:-inset-4" />
+              {/* Luxury ambient backlight aura */}
+              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-700/20 via-brand-400/10 to-transparent blur-2xl -z-10" />
 
-              {/* Main portrait */}
-              <div className="relative aspect-[0.82] overflow-hidden rounded-[46%_46%_5%_5%] bg-[#ded7d0] shadow-card">
+              {/* Architectural gold outer hairline frame */}
+              <div className="absolute -inset-2.5 rounded-2xl border border-brand-700/30 pointer-events-none" />
+
+              {/* Main portrait executive card */}
+              <div className="relative aspect-[0.76] overflow-hidden rounded-2xl bg-[#14110e] shadow-2xl ring-1 ring-black/10">
                 <Image
-                  src="/imgi_8_652076002_18074248049545715_1199206770821780813_n.jpg"
-                  alt="Dra. Izabella Rennó Del-Ducca de Souza — Advogada OAB/MG 201.285"
+                  src="/dra-lucimara-hero-v2.png"
+                  alt="Dra. Lucimara Fernandes — Advogada OAB/MG 231.216"
                   fill
                   priority
                   sizes="(max-width: 640px) 90vw, (max-width: 1024px) 70vw, 42vw"
-                  className="object-cover object-[50%_15%]"
+                  className="object-cover object-[50%_6%]"
                 />
-                <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-brand-950/85 via-brand-950/40 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between gap-3 text-white sm:bottom-8 sm:left-8 sm:right-8">
+
+                {/* Gradient vignette on bottom */}
+                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+
+                {/* Executive name overlay */}
+                <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between gap-3 text-white sm:bottom-7 sm:left-7 sm:right-7">
                   <div>
-                    <p className="font-serif text-2xl font-normal tracking-wide">
-                      Dra. Izabella Rennó
+                    <p className="font-serif text-2xl font-normal tracking-wide text-white">
+                      Dra. Lucimara Fernandes
                     </p>
-                    <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-brand-200">
-                      OAB/MG 201.285 · Advocacia
+                    <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-brand-300">
+                      OAB/MG 231.216 · Advocacia
                     </p>
                   </div>
-                  <span className="grid size-11 shrink-0 place-items-center rounded-full border border-brand-300/40 bg-brand-950/40 text-brand-200 backdrop-blur-sm">
+                  <span className="grid size-11 shrink-0 place-items-center rounded-full border border-brand-300/40 bg-black/60 text-brand-300 backdrop-blur-md">
                     <Scale size={18} />
                   </span>
                 </div>
               </div>
 
               {/* Floating badges */}
-              <div className="absolute -left-4 top-[14%] rounded-full border border-brand-700/20 bg-ivory px-4 py-2.5 text-[10px] font-bold tracking-[0.14em] text-brand-800 shadow-card sm:-left-9 sm:px-5">
-                ATENDIMENTO MINUCIOSO
+              <div className="absolute -left-3 top-[10%] rounded-full border border-brand-700/30 bg-ivory/95 px-4 py-2.5 text-[10px] font-bold tracking-[0.14em] text-brand-800 shadow-xl backdrop-blur-md sm:-left-6 sm:px-5">
+                ATENDIMENTO ARTESANAL
               </div>
 
-              <div className="absolute -right-3 bottom-[22%] rounded-2xl border border-brand-700/20 bg-white/95 p-3.5 shadow-card backdrop-blur-md sm:-right-8">
+              <div className="absolute -right-3 bottom-[18%] rounded-2xl border border-brand-700/30 bg-white/95 p-4 shadow-2xl backdrop-blur-md sm:-right-6">
                 <div className="flex items-center gap-2 text-brand-700">
-                  <Star size={14} className="fill-brand-700" />
+                  <Star size={15} className="fill-brand-700" />
                   <span className="font-serif text-lg font-bold text-ink">
-                    4,9 / 5,0
+                    5,0 / 5,0
                   </span>
                 </div>
                 <p className="mt-0.5 text-[10px] uppercase tracking-wider text-ink-soft">
-                  50+ Avaliações Google
+                  62 Avaliações Google
                 </p>
               </div>
             </motion.div>
@@ -556,10 +605,10 @@ export default function Home() {
         >
           <div className="mx-auto grid max-w-7xl gap-7 px-5 py-8 sm:grid-cols-4 sm:gap-4 sm:px-8 lg:px-12">
             {[
-              ["4,9 ★", "nota máxima com 50+ avaliações no Google"],
-              ["HarvardX", "certificação em Direito Contratual"],
-              ["OAB/MG", "nº 201.285 com atuação especializada"],
-              ["Itajubá & Brasil", "atendimento presencial e 100% on-line"],
+              ["5,0 ★", "nota máxima com 62 avaliações no Google"],
+              ["OAB/MG", "nº 231.216 com atuação combativa"],
+              ["Poços de Caldas", "Ed. Enterprise · Jardim Cascatinha"],
+              ["Brasil Inteiro", "atendimento presencial e 100% on-line"],
             ].map(([value, label], index) => (
               <div
                 key={label}
@@ -580,13 +629,13 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Sobre a Dra. Izabella Rennó */}
+        {/* Sobre a Dra. Lucimara Fernandes */}
         <section
           id="sobre"
           className="scroll-mt-24 bg-white py-20 sm:py-28 lg:py-32"
         >
           <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-[0.94fr_1.06fr] lg:gap-20 lg:px-12">
-            {/* Office photo with HarvardX Certificate */}
+            {/* OAB Institutional Photo Presentation */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -594,30 +643,30 @@ export default function Home() {
               variants={reveal}
               className="relative mx-auto w-full max-w-[540px]"
             >
-              <div className="relative aspect-[0.95] overflow-hidden rounded-[2px] bg-[#ded7d0] shadow-card">
+              <div className="relative aspect-[0.93] overflow-hidden rounded-[2px] bg-[#d9d3cb] shadow-card">
                 <Image
-                  src="/imgi_46_669839595_18577841050053593_6416266873760283509_n.jpg"
-                  alt="Dra. Izabella Rennó em seu escritório com certificado HarvardX em Contract Law"
+                  src="/dra-lucimara-oab-portrait.jpg"
+                  alt="Dra. Lucimara Fernandes — OAB Minas Gerais Subseção Poços de Caldas"
                   fill
                   sizes="(max-width: 1024px) 90vw, 45vw"
-                  className="object-cover object-[50%_25%]"
+                  className="object-cover object-[50%_18%]"
                 />
               </div>
 
               {/* Authority card */}
-              <div className="absolute -bottom-6 right-3 max-w-[270px] border-l-2 border-brand-700 bg-ivory px-5 py-4 shadow-card sm:-right-6 sm:px-6">
+              <div className="absolute -bottom-6 right-3 max-w-[290px] border-l-2 border-brand-700 bg-ivory px-5 py-4 shadow-card sm:-right-6 sm:px-6">
                 <div className="flex items-center gap-2 text-brand-700">
-                  <Award size={16} />
+                  <ShieldCheck size={16} />
                   <p className="text-[10px] font-bold uppercase tracking-[0.16em]">
-                    Harvard Law School
+                    OAB Minas Gerais
                   </p>
                 </div>
                 <p className="mt-1 font-serif text-lg leading-snug text-ink">
-                  Contract Law Certification
+                  Subseção Poços de Caldas
                 </p>
                 <p className="mt-1 text-[11px] leading-4 text-ink-soft">
-                  Formação contínua de padrão internacional aplicada à sua
-                  defesa.
+                  Presença institucional ativa e compromisso inegociável com a
+                  defesa dos direitos dos clientes.
                 </p>
               </div>
 
@@ -632,7 +681,7 @@ export default function Home() {
               variants={stagger}
             >
               <motion.p variants={reveal} className="eyebrow">
-                TRAJETÓRIA & RIGOR TÉCNICO
+                TRAJETÓRIA & COMPROMISSO COM A DEFESA
               </motion.p>
               <motion.h2
                 variants={reveal}
@@ -640,32 +689,30 @@ export default function Home() {
               >
                 Uma advocacia que une{" "}
                 <span className="italic text-brand-700">
-                  profundidade jurídica
+                  profundidade técnica
                 </span>{" "}
-                e compromisso pessoal.
+                e proximidade humana.
               </motion.h2>
 
               <motion.p
                 variants={reveal}
                 className="mt-6 max-w-xl text-[15px] leading-7 text-ink-soft"
               >
-                A Dra. Izabella Rennó Del-Ducca de Souza (OAB/MG 201.285)
-                consolida sua prática na advocacia sob um princípio
-                fundamental: cada causa é única e merece atenção artesanal. Não
-                utilizamos petições genéricas nem respostas padronizadas.
+                A <strong className="text-ink">Dra. Lucimara Fernandes (OAB/MG 231.216)</strong>{" "}
+                consolida sua atuação na advocacia sob um princípio basilar: cada
+                demanda é singular e exige dedicação artesanal. Não trabalhamos com
+                petições genéricas nem respostas padronizadas.
               </motion.p>
 
               <motion.p
                 variants={reveal}
                 className="mt-4 max-w-xl text-[15px] leading-7 text-ink-soft"
               >
-                Com certificação de excelência internacional pela prestigiada{" "}
-                <strong className="text-ink">
-                  Harvard Law School (HarvardX em Contract Law)
-                </strong>
-                , a Dra. Izabella alia rigor analítico, clareza absoluta na
-                comunicação e atuação combativa em litígios cíveis, bancários,
-                contratuais e familiares.
+                Reconhecida por clientes e parceiros empresariais pela clareza
+                nas orientações, ampla solidez na esfera trabalhista e condução
+                precisa em litígios cíveis, de família e previdenciários, a Dra.
+                Lucimara alia combatividade na defesa a um acolhimento empático
+                durante todas as fases do processo.
               </motion.p>
 
               <motion.div
@@ -682,25 +729,24 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2.5 text-xs text-ink font-medium">
                   <CheckCircle2 size={16} className="text-brand-700 shrink-0" />
-                  <span>Escritório sediado no Centro de Itajubá</span>
+                  <span>Escritório no Edifício Enterprise em Poços de Caldas</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-xs text-ink font-medium">
                   <CheckCircle2 size={16} className="text-brand-700 shrink-0" />
-                  <span>Atendimento on-line em todo o país</span>
+                  <span>Atendimento on-line seguro em todo o Brasil</span>
                 </div>
               </motion.div>
 
               <motion.div variants={reveal} className="mt-9">
                 <GlowingButton
                   href={getWhatsAppUrl(
-                    "Olá, Dra. Izabella Rennó. Gostaria de entender como o escritório pode atuar no meu caso."
+                    "Olá, Dra. Lucimara Fernandes. Gostaria de entender como o escritório pode atuar no meu caso."
                   )}
                   target="_blank"
                   size="md"
                   className="rounded-full shadow-md"
                 >
-                  <WhatsAppIcon size={16} /> Agendar consulta com a Dra.
-                  Izabella
+                  <WhatsAppIcon size={16} /> Agendar consulta com a Dra. Lucimara
                 </GlowingButton>
               </motion.div>
             </motion.div>
@@ -722,16 +768,16 @@ export default function Home() {
             >
               <Heading
                 eyebrow="ÁREAS DE ATUAÇÃO ESTRATÉGICA"
-                description="Atuação técnica aprofundada para proteger seu patrimônio, sua família e seus direitos fundamentais."
+                description="Atuação técnica aprofundada para proteger seu trabalho, seu patrimônio, sua família e seus direitos fundamentais."
               >
-                Segurança jurídica e estratégia nos{" "}
+                Segurança jurídica e combatividade nos{" "}
                 <span className="italic text-brand-700">
                   momentos mais decisivos.
                 </span>
               </Heading>
               <p className="max-w-[260px] pb-1 text-xs leading-6 text-ink-soft">
                 Toque em uma área para visualizar os temas atendidos e consultar
-                diretamente a Dra. Izabella.
+                diretamente a Dra. Lucimara.
               </p>
             </motion.div>
 
@@ -740,7 +786,7 @@ export default function Home() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.12 }}
               variants={stagger}
-              className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4"
+              className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"
             >
               {practiceAreas.map((area, index) => {
                 const Icon = area.icon;
@@ -748,7 +794,7 @@ export default function Home() {
                   <motion.article
                     key={area.id}
                     variants={reveal}
-                    className="group flex min-h-[340px] flex-col border border-ink/10 bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-700/40 hover:shadow-card sm:p-8"
+                    className="group flex min-h-[350px] flex-col border border-ink/10 bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-700/40 hover:shadow-card sm:p-7"
                   >
                     <div className="flex items-start justify-between">
                       <span className="grid size-12 place-items-center rounded-full bg-brand-50 text-brand-700 transition-colors group-hover:bg-brand-700 group-hover:text-white">
@@ -763,7 +809,7 @@ export default function Home() {
                       <span className="inline-block rounded-full bg-brand-50 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wider text-brand-800">
                         {area.tag}
                       </span>
-                      <h3 className="mt-3 font-serif text-[1.65rem] leading-tight text-ink">
+                      <h3 className="mt-3 font-serif text-[1.55rem] leading-tight text-ink">
                         {area.title}
                       </h3>
                       <p className="mt-3 text-[13px] leading-6 text-ink-soft">
@@ -789,20 +835,20 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Informação e Análise Jurídica (Posts reais fornecidos) */}
-        <section id="artigos" className="bg-[#ede7df] py-20 sm:py-28">
+        {/* Informação e Análise Jurídica */}
+        <section id="artigos" className="bg-[#eee8e0] py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="grid items-end gap-7 md:grid-cols-[1fr_auto]">
               <Heading
                 eyebrow="ANÁLISE & CONTEÚDO JURÍDICO"
-                description="Orientações e esclarecimentos práticos da Dra. Izabella Rennó sobre situações concretas do dia a dia."
+                description="Orientações e esclarecimentos práticos da Dra. Lucimara Fernandes sobre direitos fundamentais e proteção patrimonial."
               >
                 Esclarecimento de direitos sobre{" "}
-                <span className="italic text-brand-700">temas reais.</span>
+                <span className="italic text-brand-700">situações reais.</span>
               </Heading>
               <a
                 href={getWhatsAppUrl(
-                  "Olá, Dra. Izabella. Vi seus conteúdos informativos e gostaria de tirar uma dúvida jurídica."
+                  "Olá, Dra. Lucimara. Vi seus conteúdos informativos e gostaria de tirar uma dúvida jurídica sobre meu caso."
                 )}
                 target="_blank"
                 rel="noreferrer"
@@ -813,7 +859,7 @@ export default function Home() {
             </div>
 
             <div className="mt-11 grid gap-8 md:grid-cols-2">
-              {/* Card 1: Banco / Tempo na fila */}
+              {/* Card 1: Direito do Trabalho / Rescisão Indireta */}
               <motion.article
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -821,82 +867,86 @@ export default function Home() {
                 transition={{ duration: 0.65 }}
                 className="group relative flex flex-col overflow-hidden rounded-[2px] border border-brand-700/20 bg-brand-950 text-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-700/40"
               >
-                <div className="relative aspect-[1080/840] w-full overflow-hidden bg-[#1a120c]">
+                <div className="relative aspect-[1080/700] w-full overflow-hidden bg-[#18120d]">
                   <Image
-                    src="/imgi_37_624713445_18079582943205098_4776356004155678095_n.jpg"
-                    alt="Quanto vale seu tempo na fila do banco? — Dra. Izabella Rennó"
+                    src="/artigo-direito-trabalho.webp"
+                    alt="CLT e Direito do Trabalho — Dra. Lucimara Fernandes"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
+                    className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]"
                   />
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-7 sm:p-8">
                   <div>
                     <span className="inline-block rounded-full bg-brand-700/35 px-3 py-1 text-[9px] font-bold uppercase tracking-[0.2em] text-brand-200">
-                      Direito do Consumidor & Bancário
+                      Direito do Trabalho & Emprego
                     </span>
                     <h3 className="mt-4 font-serif text-2xl leading-snug sm:text-3xl text-white">
-                      Quanto vale seu tempo na fila do banco?
+                      Rescisão Indireta: Quando as faltas do empregador justificam
+                      a saída com todos os direitos
                     </h3>
                     <p className="mt-3 text-xs leading-6 text-white/70">
-                      A espera excessiva e desarrazoada em agências bancárias que
-                      ultrapassa os limites legais pode ensejar reparação civil
-                      com base na teoria do desvio produtivo do consumidor.
+                      Atrasos frequentes de salários, ausência de depósitos de FGTS,
+                      sobrecarga excessiva ou humilhações configuram falta grave do
+                      empregador (Art. 483 da CLT), autorizando o recebimento de
+                      todas as verbas rescisórias, saque do FGTS com 40% e seguro-desemprego.
                     </p>
                   </div>
                   <a
                     href={getWhatsAppUrl(
-                      "Olá, Dra. Izabella. Gostaria de orientações sobre problemas com banco ou tempo abusivo de espera."
+                      "Olá, Dra. Lucimara. Gostaria de orientações sobre direitos trabalhistas ou rescisão indireta."
                     )}
                     target="_blank"
                     rel="noreferrer"
                     className="mt-6 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.16em] text-brand-200 transition-colors hover:text-white"
                   >
-                    Analisar minha situação <ArrowUpRight size={14} />
+                    Analisar minha situação trabalhista <ArrowUpRight size={14} />
                   </a>
                 </div>
               </motion.article>
 
-              {/* Card 2: Doação e Ingratidão */}
+              {/* Card 2: Direito Civil / Inventário em Cartório */}
               <motion.article
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.65, delay: 0.1 }}
-                className="group relative flex flex-col overflow-hidden rounded-[2px] border border-brand-700/20 bg-[#1f1814] text-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-700/40"
+                className="group relative flex flex-col overflow-hidden rounded-[2px] border border-brand-700/20 bg-[#1b1511] text-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-700/40"
               >
-                <div className="relative aspect-[1080/840] w-full overflow-hidden bg-[#18110d]">
+                <div className="relative aspect-[1080/700] w-full overflow-hidden bg-[#16100c]">
                   <Image
-                    src="/imgi_40_623014577_18101084674836895_2038662800172169102_n.jpg"
-                    alt="Posso cancelar uma doação por ingratidão de quem recebeu? — Dra. Izabella Rennó"
+                    src="/artigo-direito-civil.webp"
+                    alt="Código Civil Brasileiro e Partilha Patrimonial — Dra. Lucimara Fernandes"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
+                    className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]"
                   />
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-7 sm:p-8">
                   <div>
                     <span className="inline-block rounded-full bg-brand-700/35 px-3 py-1 text-[9px] font-bold uppercase tracking-[0.2em] text-brand-200">
-                      Direito Civil & Patrimonial
+                      Direito Civil & Sucessões
                     </span>
                     <h3 className="mt-4 font-serif text-2xl leading-snug sm:text-3xl text-white">
-                      Posso cancelar uma doação por ingratidão de quem recebeu?
+                      Inventário em Cartório: Como planejar a partilha de bens com
+                      agilidade e economia tributária
                     </h3>
                     <p className="mt-3 text-xs leading-6 text-white/70">
-                      O Código Civil resguarda expressamente hipóteses legais em
-                      que a doação pode ser revogada quando comprovada conduta
-                      grave do donatário ou descumprimento de obrigações.
+                      Havendo concordância entre herdeiros capazes, o inventário
+                      extrajudicial em cartório de notas resolve a transferência
+                      de bens em semanas, evitando disputas judiciais desgastantes e
+                      permitindo planejamento tributário do ITCMD.
                     </p>
                   </div>
                   <a
                     href={getWhatsAppUrl(
-                      "Olá, Dra. Izabella. Gostaria de tirar dúvidas sobre cancelamento de doação ou proteção de bens."
+                      "Olá, Dra. Lucimara. Gostaria de tirar dúvidas sobre inventário em cartório ou partilha de bens."
                     )}
                     target="_blank"
                     rel="noreferrer"
                     className="mt-6 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.16em] text-brand-200 transition-colors hover:text-white"
                   >
-                    Analisar minha situação <ArrowUpRight size={14} />
+                    Analisar situação sucessória <ArrowUpRight size={14} />
                   </a>
                 </div>
               </motion.article>
@@ -913,7 +963,7 @@ export default function Home() {
             <Heading
               eyebrow="NOSSO COMPROMISSO PROFISSIONAL"
               light
-              description="A condução de cada demanda com a máxima técnica, transparência irrestrita e respeito ao tempo e aos anseios de quem nos procura."
+              description="A condução de cada demanda com a máxima técnica, transparência irrestrita e respeito absoluto ao tempo e aos anseios de quem nos procura."
             >
               A precisão jurídica aliada ao{" "}
               <span className="italic text-brand-200">
@@ -932,17 +982,17 @@ export default function Home() {
                 [
                   "01",
                   "Estudo aprofundado de cada linha processual",
-                  "Como ressaltam nossos clientes em depoimentos públicos, lemos o processo inteiro com extremo critério e redigimos manifestações minuciosas, sem modelos genéricos.",
+                  "Como enfatizam nossos clientes em avaliações públicas, analisamos os autos minuciosamente e redigimos peças sob medida para a sua realidade, sem modelos genéricos.",
                 ],
                 [
                   "02",
                   "Comunicação direta, transparente e acessível",
-                  "Você é mantido informado sobre cada movimentação em linguagem clara, sabendo exatamente quais são as chances, os riscos e as estratégias em curso.",
+                  "Você é informado sobre cada andamento em linguagem clara e objetiva, compreendendo com exatidão as probabilidades, os prazos e a estratégia jurídica adotada.",
                 ],
                 [
                   "03",
-                  "Estratégia e combatividade de alto padrão",
-                  "Aliamos atualização doutrinária contínua e jurisprudência dos tribunais superiores para defender seus interesses com a máxima firmeza e combatividade.",
+                  "Estratégia resolutiva e combatividade de alto nível",
+                  "Aliamos atualização jurídica constante aos precedentes mais recentes dos tribunais para resguardar seus direitos com firmeza, ética e determinação inabalável.",
                 ],
               ].map(([number, title, description]) => (
                 <motion.div
@@ -975,7 +1025,7 @@ export default function Home() {
               <div>
                 <Heading
                   eyebrow="PROVA SOCIAL & AVALIAÇÕES REAIS"
-                  description="A reputação consolidada da Dra. Izabella Rennó é construída através da dedicação extrema em cada caso. Confira as avaliações no perfil público do Google."
+                  description="A reputação consolidada da Dra. Lucimara Fernandes é alicerçada na dedicação minuciosa a cada cliente. Veja o que dizem aqueles que confiaram suas causas ao escritório no Google."
                 >
                   Confiança comprovada por quem{" "}
                   <span className="italic text-brand-700">
@@ -997,11 +1047,11 @@ export default function Home() {
                 {/* Rating highlights pills */}
                 <div className="mt-9 flex flex-wrap gap-2">
                   {[
-                    "Clareza nas explicações",
+                    "Clareza nas informações",
                     "Extremamente atenciosa",
-                    "Profundo conhecimento técnico",
-                    "Leitura minuciosa do processo",
-                    "Objetivos alcançados",
+                    "Segurança durante o processo",
+                    "Amplo conhecimento trabalhista",
+                    "Atendimento humano e competente",
                   ].map((tag) => (
                     <span
                       key={tag}
@@ -1038,7 +1088,7 @@ export default function Home() {
                 <div className="relative mt-8 flex flex-wrap items-end justify-between gap-6">
                   <div>
                     <span className="font-serif text-7xl font-normal leading-none text-ink sm:text-8xl">
-                      4,9
+                      5,0
                     </span>
                     <p className="mt-2 text-xs font-semibold text-brand-800">
                       Excelente · Classificação Máxima
@@ -1046,7 +1096,7 @@ export default function Home() {
                   </div>
                   <div className="pb-1 text-right">
                     <p className="font-serif text-3xl font-semibold text-brand-700">
-                      50+ avaliações
+                      62 avaliações
                     </p>
                     <p className="mt-1 text-xs text-ink-soft">
                       Perfil profissional verificado no Google
@@ -1056,7 +1106,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Testimonials Grid */}
+            {/* Testimonials Grid - Row 1 */}
             <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {clientReviews.slice(0, 4).map((review) => (
                 <div
@@ -1101,7 +1151,7 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Second row of reviews */}
+            {/* Testimonials Grid - Row 2 */}
             <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {clientReviews.slice(4, 8).map((review) => (
                 <div
@@ -1157,7 +1207,7 @@ export default function Home() {
             <div>
               <Heading
                 eyebrow="CONTATO & LOCALIZAÇÃO"
-                description="Agende sua consulta presencial no coração de Itajubá ou realize seu atendimento de forma totalmente on-line com total segurança."
+                description="Agende sua consulta presencial no Edifício Enterprise no Jardim Cascatinha ou realize seu atendimento de forma totalmente on-line com sigilo e segurança."
               >
                 Estamos prontos para{" "}
                 <span className="italic text-brand-700">ouvir sua história.</span>
@@ -1181,7 +1231,7 @@ export default function Home() {
               <div className="mt-10 space-y-4 text-xs text-ink-soft">
                 <div className="flex items-center gap-3">
                   <Clock size={16} className="text-brand-700" />
-                  <span>Segunda a Sexta: 09h às 18h (sob agendamento)</span>
+                  <span>Segunda a Sexta: 09h às 18h (sob agendamento prévio)</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone size={16} className="text-brand-700" />
@@ -1217,26 +1267,26 @@ export default function Home() {
                     Sede do Escritório
                   </p>
                   <p className="mt-1 font-serif text-2xl text-ink">
-                    Itajubá · Minas Gerais
+                    Poços de Caldas · Minas Gerais
                   </p>
                 </div>
               </div>
 
               <address className="mt-7 max-w-md not-italic text-[14px] leading-7 text-ink-soft">
                 <strong className="text-ink font-semibold">
-                  Edifício Santa Clara
+                  Condomínio Edifício Enterprise
                 </strong>
                 <br />
-                Rua Cel. Francisco Braz, 185 - Sala 205
+                Av. Santo Antônio, 200 - Sala 908
                 <br />
-                Centro, Itajubá - MG, CEP 37500-005, Brasil
+                Jardim Cascatinha, Poços de Caldas - MG, CEP 37701-036, Brasil
               </address>
 
               <div className="my-7 h-px bg-ink/10" />
 
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <p className="text-xs text-ink-soft">
-                  Atendimento presencial no Centro e on-line em todo o Brasil
+                  Atendimento presencial no Edifício Enterprise e digital em todo o Brasil
                 </p>
                 <a
                   href={GOOGLE_MAPS_URL}
@@ -1256,7 +1306,7 @@ export default function Home() {
           <div className="mx-auto flex max-w-7xl flex-col justify-between gap-7 sm:flex-row sm:items-center">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-200">
-                IZABELLA RENNÓ ADVOCACIA · OAB/MG 201.285
+                DRA. LUCIMARA FERNANDES ADVOCACIA · {OAB_NUMBER}
               </p>
               <h2 className="mt-3 max-w-2xl font-serif text-3xl leading-tight sm:text-4xl text-white">
                 Pronto para defender seus direitos com quem realmente se dedica
@@ -1265,11 +1315,11 @@ export default function Home() {
             </div>
             <a
               href={getWhatsAppUrl(
-                "Olá, Dra. Izabella. Gostaria de agendar uma consulta inicial para avaliar meu caso."
+                "Olá, Dra. Lucimara. Gostaria de agendar uma consulta inicial para avaliar meu caso."
               )}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex w-fit shrink-0 items-center gap-3 rounded-full bg-white px-7 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-brand-900 shadow-md transition-all hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-lg"
+              className="group inline-flex w-fit shrink-0 items-center gap-3 rounded-full bg-white px-7 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-brand-950 shadow-md transition-all hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-lg"
             >
               <WhatsAppIcon size={17} /> Falar no WhatsApp <ArrowUpRight size={15} />
             </a>
@@ -1280,21 +1330,21 @@ export default function Home() {
         <footer className="bg-brand-950 px-5 py-14 text-white sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_1fr]">
             <div>
-              <div className="inline-flex rounded-sm bg-white/95 p-3.5 shadow-md">
+              <div className="inline-flex">
                 <Image
                   src="/logo.png"
-                  width={450}
-                  height={154}
-                  alt="Izabella Rennó Advocacia"
-                  className="h-16 w-auto object-contain"
+                  width={480}
+                  height={197}
+                  alt="Dra. Lucimara Fernandes Advocacia"
+                  className="h-16 w-auto object-contain sm:h-[78px]"
                 />
               </div>
               <p className="mt-5 max-w-xs text-xs leading-6 text-white/65">
                 Advocacia estratégica, rigor técnico e dedicação exclusiva. Sede
-                no Centro de Itajubá - MG e atendimento digital em todo o Brasil.
+                no Edifício Enterprise em Poços de Caldas - MG e atendimento digital em todo o Brasil.
               </p>
               <p className="mt-3 text-[11px] font-semibold text-brand-300">
-                Inscrição OAB/MG 201.285
+                Inscrição {OAB_NUMBER}
               </p>
             </div>
 
@@ -1350,7 +1400,7 @@ export default function Home() {
                   className="footer-link inline-flex items-start gap-2"
                 >
                   <MapPin size={15} className="mt-0.5 shrink-0" />
-                  <span>Ed. Santa Clara · R. Cel. Francisco Braz, 185 - Sl 205, Itajubá - MG</span>
+                  <span>Ed. Enterprise · Av. Santo Antônio, 200 - Sl 908, Poços de Caldas - MG</span>
                 </a>
               </div>
             </div>
@@ -1358,7 +1408,7 @@ export default function Home() {
 
           <div className="mx-auto mt-12 flex max-w-7xl flex-col gap-3 border-t border-white/15 pt-6 text-[10px] text-white/50 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              © {new Date().getFullYear()} Dra. Izabella Rennó Del-Ducca de Souza (OAB/MG 201.285). Todos os direitos reservados.
+              © {new Date().getFullYear()} Dra. Lucimara Fernandes ({OAB_NUMBER}). Todos os direitos reservados.
             </p>
             <p>
               Conteúdo meramente informativo, em estrita conformidade com o Código de Ética e Disciplina da OAB.

@@ -1,6 +1,6 @@
-# Izabella Rennó Advocacia
+# Dra. Lucimara Fernandes Advocacia
 
-Site institucional de alto padrão da **Dra. Izabella Rennó Del-Ducca de Souza** (OAB/MG 201.285), escritório sediado no Edifício Santa Clara em Itajubá - MG, com atendimento presencial e on-line para todo o Brasil.
+Site institucional de alto padrão da **Dra. Lucimara Fernandes** (OAB/MG 231.216), com escritório sediado no Condomínio Edifício Enterprise em Poços de Caldas - MG, oferecendo assessoria jurídica estratégica presencial e on-line para todo o Brasil.
 
 ## Desenvolvimento
 

@@ -1,25 +1,25 @@
-# Izabella Rennó Advocacia
+# Dra. Lucimara Fernandes Advocacia
 
 ## Plataforma
-Site institucional responsivo e de alto padrão em Next.js 16 (App Router), projetado para transmitir autoridade, excelência técnica, sofisticação e acolhimento humano, com navegação fluida, modais detalhados de atuação e integração direta com WhatsApp e canais de contato.
+Site institucional responsivo e de alto padrão em Next.js 16 (App Router), projetado para transmitir autoridade jurídica, excelência técnica, sofisticação e acolhimento humano, com navegação fluida, modais detalhados de atuação e integração direta com WhatsApp e canais de contato.
 
 ## Público
-Pessoas físicas e jurídicas que buscam assessoria jurídica de alto padrão em Itajubá, Sul de Minas Gerais, São Paulo e em todo o Brasil (via atendimento digital estruturado), especialmente nas áreas Cível, Contratos, Consumidor, Bancário, Família e Trabalhista.
+Pessoas físicas e jurídicas que buscam assessoria jurídica de alto padrão em Poços de Caldas, Sul de Minas Gerais, São Paulo e em todo o Brasil (via atendimento digital estruturado), especialmente nas áreas de Direito do Trabalho, Cível & Contratos, Família & Sucessões, Previdenciário e Consumidor Bancário.
 
 ## Objetivo
-Apresentar a Dra. Izabella Rennó Del-Ducca de Souza (OAB/MG 201.285), sua formação de excelência internacional (HarvardX em Contract Law), sua dedicação artesanal a cada caso, prova social consolidada (4,9 estrelas com 50+ avaliações no Google) e facilitar o contato ágil via WhatsApp.
+Apresentar a Dra. Lucimara Fernandes (OAB/MG 231.216), sua prática de excelência e combatividade, dedicação artesanal a cada caso, prova social consolidada (5,0 estrelas com 62 avaliações no Google) e facilitar o contato ágil via WhatsApp.
 
 ## Identidade Visual
-- Nome: Dra. Izabella Rennó | Izabella Rennó Advocacia
-- Paleta extraída da marca: Dourado metálico nobre (#c59b4e), Bronze profundo (#936b28), Espresso profundo (#16100c), Marfim refinado (#faf8f4) e Branco puro.
+- Nome: Dra. Lucimara Fernandes | Advogada
+- Registro: OAB/MG 231.216
+- Paleta extraída da marca: Dourado primário nobre (#d8ab4c), Dourado escuro / Bronze (#966c22), Champagne luminoso (#f5de7b), Preto nobre / Espresso (#120f0d), Marfim refinado (#faf7f2) e Branco puro (#ffffff).
 - Tipografia: Cormorant Garamond nos títulos de autoridade e Plus Jakarta Sans para leitura confortável e contemporânea.
-- Tom: Nobre, assertivo, confiável, transparente, técnico e empático.
+- Tom: Nobre, assertivo, confiável, acolhedor, técnico e combativo.
 
 ## Conteúdo e Mídia
-- Retrato principal da Dra. Izabella Rennó em seu ambiente profissional com diplomas e certificados (`public/imgi_8_...`).
-- Fotografia em seu escritório com o certificado internacional da Harvard Law School / HarvardX (`public/imgi_46_...`).
-- Publicações e artigos jurídicos reais: Direito do Consumidor e Bancário / Fila de Banco (`public/imgi_37_...`) e Direito Civil / Anulação de Doação por Ingratidão (`public/imgi_40_...`).
-- Logotipo oficial vetorizado e rasterizado de alta resolução (`public/logo.png`) e Monograma IR dourado (`public/icon-flavicon.png`).
-- Endereço físico: Edifício Santa Clara - R. Cel. Francisco Braz, 185 - Sl 205 - Centro, Itajubá - MG, 37500-005.
-- Telefone / WhatsApp: (35) 99740-5607.
-- Prova social: 4,9 estrelas e mais de 50 avaliações autênticas no Google Meu Negócio.
+- Retrato principal da Dra. Lucimara Fernandes em vestimenta profissional de alto padrão (`public/dra-lucimara-hero.png`).
+- Fotografia institucional autêntica na OAB Minas Gerais - Subseção Poços de Caldas (`public/dra-lucimara-oab-portrait.jpg` e `public/dra-lucimara-oab.jpg`).
+- Publicações e artigos jurídicos estratégicos: Direito do Trabalho & Rescisão Indireta (`public/artigo-direito-trabalho.webp`) e Direito Civil, Contratos & Inventário em Cartório (`public/artigo-direito-civil.webp`).
+- Logotipo oficial com monograma LF dourado vetorizado/rasterizado de alta resolução (`public/logo.png`) e Monograma LF estilizado (`public/monogram-lf.png` / `app/icon.png`).
+- Endereço físico: Condomínio Edifício Enterprise - Av. Santo Antônio, 200 - Sl 908 - Jardim Cascatinha, Poços de Caldas - MG, 37701-036.
+- Prova social: 5,0 estrelas e 62 avaliações autênticas no Google Meu Negócio.
